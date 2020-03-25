@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
 
 $softBlue: hsl(231, 69%, 60%);
 $softRed: hsl(0, 94%, 66%);
@@ -22,6 +22,7 @@ header {
          float: right;
          margin-right: 2rem;
          margin-top: -1.25rem;
+         display: none;
      }
      img.logo {
          margin-left: 10.75rem;
@@ -62,3 +63,151 @@ header {
          transition: 500ms ease-in;
      }
 }
+
+.top {
+    height: 750px;
+    .top-word-box {
+        width: 500px;
+        margin-left: 11.5%;
+        margin-top: 10rem;
+        h1 {
+            font-size: 3rem;
+            font-weight: 500;
+            color: $veryDarkBlue;
+        }
+        p {
+            color: $grayishBlue;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        button.chrome {
+            background-color: $softBlue;
+            color: white;
+            width: 160px;
+            height: 45px;
+            border: none;
+            margin-right: 1rem;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: .75rem;
+        }
+
+        button.chrome:hover {
+            border: 2px solid $softBlue;
+            color: $softBlue;
+            cursor: pointer;
+            background-color: transparent;
+            transition: .5s ease-in;
+        }
+
+        button.firefox {
+            background-color: rgba(22, 29, 63, 0.025);
+            color: hsla(229, 31%, 21%, .85);
+            width: 160px;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 0px hsla(229, 31%, 21%, .045);
+            font-weight: 500;
+            font-size: .75rem;
+        }
+        button.firefox:hover {
+            border: 2px solid hsla(229, 31%, 21%, .85);
+            cursor: pointer;
+            background-color: transparent;
+            transition: .5s ease-in;
+        }
+    }
+    .img-box {
+        margin-top: -21.5rem;
+        float: right;
+        
+        .blue-line {
+            margin-top: -20.5rem;
+            margin-left: 13rem;
+            background-color: $softBlue;
+            height: 350px;
+            width: 500px;
+            border-bottom-left-radius: 200px;
+        }
+    }
+}
+
+.features {
+    margin-top: -12rem;
+    .feature-word-box {
+        border: 1px solid red;
+        width: 535px;
+        text-align: center;
+        margin: 0 auto;
+        h2 {
+            font-size: 1.9rem;
+            color: $veryDarkBlue
+        }
+        p {
+            color: $grayishBlue;
+            line-height: 1.5;
+        }
+    }
+    .tab-box {
+        height: 700px;
+        border: 1px solid gold;
+        padding-top: 5rem;
+        .tab-nav {
+            width: 756px;
+            border: 1px solid green;
+            margin: 0 auto;
+            height: 50px;
+            h3 {
+                border: 1px solid red;
+                font-size: 1rem;
+                font-weight: 400;
+                width: 250px;
+                display: block;
+                float: left;
+                text-align: center;
+                padding-bottom: 15px;
+            }
+           
+        }
+        img {
+            margin-left: 12%;
+            margin-top: 3.5rem;
+        }
+        .blue-line {   
+            margin-top: -17rem;
+            background-color: $softBlue;
+            height: 350px;
+            width: 645px;
+            border-bottom-right-radius: 200px;
+        }
+        .tab-word-box {
+            width: 450px;
+            border: 1px solid gold;
+            float: right;
+            margin-top: -25rem;
+            margin-right: 10%;
+            h3 {
+                color: $veryDarkBlue;
+                font-size: 2rem;
+            }
+            p {
+                color: $grayishBlue;
+                line-height: 1.5;
+            }
+            button {
+                 background-color: $softBlue;
+                 color: white;
+                 border: none;
+                 width: 115px;
+                 height: 46px;
+                 border-radius: 5px;
+                 font-weight: 500;
+            font-size: .75rem;
+            }
+        }
+
+        }
+    }
+
