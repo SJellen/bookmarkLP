@@ -4,6 +4,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0;
   font-size: 18px;
@@ -190,6 +191,11 @@ header button.login:hover {
   padding-bottom: 15px;
 }
 
+.features .tab-box .tab-nav h3:hover {
+  cursor: pointer;
+  color: #fa5757;
+}
+
 .features .tab-box img {
   margin-left: 12%;
   margin-top: 3.5rem;
@@ -199,7 +205,7 @@ header button.login:hover {
   margin-top: -17rem;
   background-color: #5368df;
   height: 350px;
-  width: 645px;
+  width: 545px;
   border-bottom-right-radius: 200px;
 }
 
@@ -230,5 +236,14 @@ header button.login:hover {
   border-radius: 5px;
   font-weight: 500;
   font-size: .75rem;
+}
+
+.features .tab-box .tab-word-box button:hover {
+  border: 2px solid #5368df;
+  color: #5368df;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
 }
 /*# sourceMappingURL=style.css.map */
