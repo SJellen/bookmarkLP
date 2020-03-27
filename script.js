@@ -35,8 +35,13 @@ tab3.addEventListener('click', changeTab3);
 
 function changeTab1() {
     document.querySelector('.tab-image').src = "./images/illustration-features-tab-1.svg"
+    
     document.getElementById('h3-text').innerHTML = tab1H3
     document.getElementById('p-text').innerHTML = tab1P
+    document.getElementById('tab1').style.borderBottom = "5px solid red"
+    document.getElementById('tab2').style.borderBottom = ""
+    document.getElementById('tab3').style.borderBottom = ""
+    
 }
 
 
@@ -45,11 +50,17 @@ function changeTab2() {
     document.querySelector('.tab-image').src = "./images/illustration-features-tab-2.svg"
     document.getElementById('h3-text').innerHTML = tab2H3
     document.getElementById('p-text').innerHTML = tab2P
+    document.getElementById('tab2').style.borderBottom = "5px solid red"
+    document.getElementById('tab1').style.borderBottom = ""
+    document.getElementById('tab3').style.borderBottom = ""
 }
 
 function changeTab3() {
     document.querySelector('.tab-image').src = "./images/illustration-features-tab-3.svg"
     document.getElementById('h3-text').innerHTML = tab3H3
     document.getElementById('p-text').innerHTML = tab3P
+    document.getElementById('tab3').style.borderBottom = "5px solid red"
+    document.getElementById('tab1').style.borderBottom = ""
+    document.getElementById('tab2').style.borderBottom = ""
 }
 
