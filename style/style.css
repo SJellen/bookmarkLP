@@ -244,4 +244,140 @@ header button.login:hover {
   -webkit-transition: .5s ease-in;
   transition: .5s ease-in;
 }
+
+.extension-box .extension-word-box {
+  width: 600px;
+  margin: 0 auto 5rem auto;
+  text-align: center;
+}
+
+.extension-box .extension-word-box h2 {
+  color: #252b46;
+  font-size: 1.9rem;
+}
+
+.extension-box .extension-word-box p {
+  color: #9194a1;
+}
+
+.extension-box .extension-card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.extension-box .extension-card-box .extension-card {
+  -webkit-box-shadow: 1px 10px 10px 0px rgba(145, 148, 161, 0.15);
+          box-shadow: 1px 10px 10px 0px rgba(145, 148, 161, 0.15);
+  width: 280px;
+  height: 380px;
+  margin-right: 2.75rem;
+  border-radius: 10px;
+}
+
+.extension-box .extension-card-box .extension-card img.card-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+
+.extension-box .extension-card-box .extension-card h3 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.extension-box .extension-card-box .extension-card h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #9194a1;
+  margin-top: -.5rem;
+}
+
+.extension-box .extension-card-box .extension-card .add-install {
+  width: 230px;
+  height: 46px;
+  border: none;
+  color: white;
+  background-color: #5368df;
+  font-size: .9rem;
+  border-radius: 5px;
+  margin: 20px auto 0 auto;
+  display: block;
+  font-weight: 500;
+}
+
+.extension-box .extension-card-box .extension-card .add-install:hover {
+  border: 2px solid #5368df;
+  color: #5368df;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.extension-box .extension-card-box #card-firefox {
+  margin-top: 2rem;
+}
+
+.extension-box .extension-card-box #card-opera {
+  margin-top: 4rem;
+}
+
+.accordian-box .accordian-word-box {
+  width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.accordian-box .accordian-word-box h2 {
+  color: #252b46;
+  font-size: 1.9rem;
+}
+
+.accordian-box .accordian-word-box p {
+  color: #9194a1;
+  line-height: 1.5;
+}
+
+.accordian-box .question-answer-box {
+  width: 545px;
+  margin: 3rem auto;
+}
+
+.accordian-box .q-a {
+  border-top: 0.5px solid #9194a1;
+  border-bottom: 0.5px solid #9194a1;
+  padding: 0 0;
+  color: #252b46;
+}
+
+.accordian-box .q-a p {
+  display: none;
+}
+
+.accordian-box .q-a img {
+  float: right;
+  margin-right: 2rem;
+  margin-top: -2.25rem;
+}
+
+.accordian-box .q-a h4 {
+  font-size: 1rem;
+  margin-left: .5rem;
+  color: #252b46;
+}
+
+.accordian-box .q-a:hover {
+  cursor: pointer;
+}
+
+.accordian-box .q-a:hover h4 {
+  color: #fa5757;
+}
 /*# sourceMappingURL=style.css.map */
