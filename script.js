@@ -64,3 +64,62 @@ function changeTab3() {
     document.getElementById('tab2').style.borderBottom = ""
 }
 
+
+
+
+/* 
+const openArrow = document.querySelector('.open-arrow');
+
+function reveal() {
+    document.querySelector('.p-reveal').style.display = "block"
+    document.querySelector('.open-arrow').style.transform = "rotate(180deg)"
+}
+
+openArrow.addEventListener('click', reveal);
+ */
+/* 
+ const questions = document.querySelectorAll('.q-a')
+ const openArrows = document.querySelectorAll('.open-arrow')
+
+ function toggleOpen() {
+     this.classList.toggle('.open')
+     console.log("hi")
+ }
+
+ openArrows.forEach(openArrow => openArrow.addEventListener('click', toggleOpen))
+ */
+
+/* 
+ const arrows = document.querySelectorAll(".open-arrow");
+ const paragraphs = document.querySelector(".p-reveal")
+ 
+ function toggleMenu() {
+     if(paragraphs.classList.contains("open")) {
+         paragraphs.classList.remove("open");
+         document.querySelector('.open-arrow').style.transform = "rotate(0deg)"
+     } else {
+         paragraphs.classList.add("open");
+         document.querySelector('.open-arrow').style.transform = "rotate(180deg)"
+     }
+ }
+ 
+//  arrows.addEventListener('click', toggleMenu)
+
+ arrows.forEach(arrow => arrow.addEventListener('click', toggleMenu))
+ */
+
+ 
+const acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}

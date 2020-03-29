@@ -329,6 +329,10 @@ header button.login:hover {
   margin-top: 4rem;
 }
 
+.accordian-box {
+  padding-bottom: 8rem;
+}
+
 .accordian-box .accordian-word-box {
   width: 35%;
   margin: 0 auto;
@@ -350,34 +354,162 @@ header button.login:hover {
   margin: 3rem auto;
 }
 
-.accordian-box .q-a {
-  border-top: 0.5px solid #9194a1;
-  border-bottom: 0.5px solid #9194a1;
-  padding: 0 0;
+.accordian-box .accordion {
+  background-color: transparent;
+  line-height: .8;
   color: #252b46;
-}
-
-.accordian-box .q-a p {
-  display: none;
-}
-
-.accordian-box .q-a img {
-  float: right;
-  margin-right: 2rem;
-  margin-top: -2.25rem;
-}
-
-.accordian-box .q-a h4 {
-  font-size: 1rem;
-  margin-left: .5rem;
-  color: #252b46;
-}
-
-.accordian-box .q-a:hover {
   cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-top: 0.5px solid #9194a1;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
-.accordian-box .q-a:hover h4 {
+.accordian-box #panel4 {
+  border-bottom: 0.5px solid #9194a1;
+}
+
+.accordian-box .active, .accordian-box .accordion:hover {
+  background-color: transparent;
   color: #fa5757;
+}
+
+.accordian-box .accordion:after {
+  content: ' \276F';
+  font-size: 1.5rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  color: #5368df;
+  font-weight: bold;
+  float: right;
+  margin-right: 5px;
+}
+
+.accordian-box .active:after {
+  content: ' \276F';
+  font-size: 1.5rem;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  color: #fa5757;
+  margin-right: 10px;
+}
+
+.accordian-box .panel {
+  padding: 0 18px;
+  color: #9194a1;
+  line-height: 2;
+  font-size: 1rem;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordian-box .panel p {
+  margin-left: -.75rem;
+  padding-bottom: 1rem;
+}
+
+.accordian-box .more-info {
+  background-color: #5368df;
+  color: white;
+  border: none;
+  width: 115px;
+  height: 46px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: .75rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.accordian-box .more-info:hover {
+  border: 2px solid #5368df;
+  color: #5368df;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.bottom {
+  background-color: #5368df;
+  height: 360px;
+}
+
+.bottom h4 {
+  color: white;
+  font-size: .75rem;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 4rem;
+}
+
+.bottom h2 {
+  text-align: center;
+  color: white;
+  width: 35%;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
+
+.bottom form {
+  border: 1px solid red;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.bottom form input {
+  width: 300px;
+  border: none;
+  height: 44px;
+  border-radius: 5px;
+}
+
+.bottom form .submit {
+  float: right;
+  margin-top: -6.5rem;
+  width: 125px;
+  height: 46px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fa5757;
+  color: white;
+  font-size: .75rem;
+  font-weight: 500;
+}
+
+.bottom form .submit:hover {
+  border: 2px solid #fa5757;
+  color: #fa5757;
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition: .5s ease-in;
+  transition: .5s ease-in;
+}
+
+.bottom form ::-webkit-input-placeholder {
+  padding-left: 2rem;
+}
+
+.bottom form :-ms-input-placeholder {
+  padding-left: 2rem;
+}
+
+.bottom form ::-ms-input-placeholder {
+  padding-left: 2rem;
+}
+
+.bottom form ::placeholder {
+  padding-left: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

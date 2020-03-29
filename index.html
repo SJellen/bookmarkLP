@@ -165,58 +165,32 @@
     </div>
    <div class="question-answer-box">
 
-     <div class="q-a" id="qa1">
-       <!-- Question 1 -->
-  <h4>What is Bookmark?</h4>
-  <img src="./images/icon-arrow.svg" alt="open arrow" class="open-arrow">
-  
-  <p>
-    <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-  </p>
-     </div>
-
-     <div class="q-a" id="qa2">
-     <!-- Question 2 -->
-  <h4>How can I request a new browser?</h4>
- <img src="./images/icon-arrow.svg" alt="open arrow" class="open-arrow">
-
- <p>
-   <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
- </p>
+    <button class="accordion">What is Bookmark?</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
     </div>
-
-
-    <div class="q-a" id="qa3">
-     <!-- Question 3 -->
-   <h4>Is there a mobile app?</h4>
-  <img src="./images/icon-arrow.svg" alt="open arrow" class="open-arrow">
- 
-  <p>
-     <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-  </p>
-     </div>
-
-
-     <div class="q-a" id="qa4">
-     <!-- Question 4 -->
-   <h4>What about other Chromium browsers?</h4>
-   <img src="./images/icon-arrow.svg" alt="open arrow" class="open-arrow">
-  
-   <p>
-      <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-   </p>
+    
+    <button class="accordion">How can I request a new browser?</button>
+    <div class="panel">
+      <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+    </div>
+    
+    <button class="accordion">Is there a mobile app?</button>
+    <div class="panel">
+      <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+      sollicitudin ex et ultricies bibendum.</p>
       </div>
+      
+      <button class="accordion">What about other Chromium browsers?</button>
+    <div class="panel" id="panel4">
+      <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+      vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    </div>
 
   
    </div>
@@ -237,9 +211,9 @@
   Stay up-to-date with what we’re doing
 </h2>
 
-<form action="POST" class="form" id="form">
+<form  class="form" id="form">
   <div class="control" id="emailID">
-    <input type="text" class="email" id="email" aria-label="email" placeholder="example@email/com">
+    <input type="text" class="email" id="email" aria-label="email" placeholder="Enter your email address">
   
     <p class="message">Whoops, make sure it's an email</p> 
    </div>
