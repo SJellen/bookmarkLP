@@ -376,7 +376,7 @@ header button.login:hover {
 }
 
 .accordian-box .active, .accordian-box .accordion:hover {
-  background-color: transparent;
+  background-color: none;
   color: #fa5757;
 }
 
@@ -463,7 +463,6 @@ header button.login:hover {
 }
 
 .bottom form {
-  border: 1px solid red;
   width: 450px;
   margin: 0 auto;
 }
@@ -475,9 +474,18 @@ header button.login:hover {
   border-radius: 5px;
 }
 
+.bottom form p {
+  opacity: 0;
+  color: white;
+  font-size: .65rem;
+  margin-top: .25rem;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
 .bottom form .submit {
   float: right;
-  margin-top: -6.5rem;
+  margin-top: -4.5rem;
   width: 125px;
   height: 46px;
   border-radius: 5px;
@@ -511,5 +519,62 @@ header button.login:hover {
 
 .bottom form ::placeholder {
   padding-left: 2rem;
+}
+
+.bottom form .error input {
+  background: url(./images/icon-error.svg) no-repeat scroll 95%;
+  border: 2px solid #fa5757;
+  border-bottom: 20px solid #fa5757;
+  background-color: white;
+}
+
+.bottom form .error p {
+  opacity: 1;
+  display: block;
+  margin-top: -1rem;
+}
+
+footer {
+  height: 90px;
+  background-color: #252b46;
+}
+
+footer .social {
+  float: right;
+  margin-right: 10%;
+  margin-top: -1.5rem;
+}
+
+footer .social img {
+  padding-left: 2rem;
+}
+
+footer .social img:hover {
+  cursor: pointer;
+  -webkit-filter: invert(54%) sepia(73%) saturate(5642%) hue-rotate(336deg) brightness(128%) contrast(94%);
+          filter: invert(54%) sepia(73%) saturate(5642%) hue-rotate(336deg) brightness(128%) contrast(94%);
+}
+
+footer .logo-white {
+  margin-left: 10.25rem;
+  margin-top: 2rem;
+}
+
+footer nav {
+  margin-left: 25rem;
+  margin-top: -1.75rem;
+}
+
+footer nav a {
+  padding-right: 3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: white;
+}
+
+footer nav a:hover {
+  cursor: pointer;
+  color: #fa5757;
 }
 /*# sourceMappingURL=style.css.map */

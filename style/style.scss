@@ -340,7 +340,7 @@ header {
               border-bottom: .5px solid $grayishBlue;
           }
           .active, .accordion:hover {
-            background-color: transparent;
+            background-color: none;
             color: $softRed;
           }
           
@@ -420,7 +420,6 @@ header {
             font-size: 2rem;
         }
         form {
-            border: 1px solid red;
             width: 450px;
             margin: 0 auto;
             input {
@@ -429,9 +428,19 @@ header {
                 height: 44px;
                 border-radius: 5px;
             }
+            p {
+                opacity: 0;
+                color: white;
+                font-size: .65rem;
+                margin-top: .25rem;
+                font-style: italic;
+                margin-left: 1rem;
+            }
+            
             .submit {
+               
                 float: right;
-                margin-top: -6.5rem;
+                margin-top: -4.5rem;
                 width: 125px;
                 height: 46px;
                 border-radius: 5px;
@@ -451,5 +460,60 @@ header {
             ::placeholder {
                 padding-left: 2rem;
             }
+            .error {
+                input {
+                    background: url(./images/icon-error.svg) no-repeat scroll 95%;
+                    border: 2px solid $softRed;
+                    border-bottom: 20px solid $softRed;
+                    background-color: white;
+                }
+                p {
+                    opacity: 1;
+                    display: block;
+                    margin-top: -1rem;
+                }
+                
+            }
+        }
+       
+    }
+
+    footer {
+        height: 90px;
+        background-color: $veryDarkBlue;
+        .social {
+            float: right;
+            margin-right: 10%;
+            margin-top: -1.5rem;
+            img {
+                padding-left: 2rem;
+            }
+            img:hover {
+               cursor: pointer;
+               filter: invert(54%) sepia(73%) saturate(5642%) hue-rotate(336deg) brightness(128%) contrast(94%);
+            }
+        }
+        .logo-white {
+            margin-left: 10.25rem;
+            margin-top: 2rem;
+        }
+        nav {
+            margin-left: 25rem;
+            margin-top: -1.75rem;
+        }
+        nav a {
+            padding-right: 3rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .75rem;
+            color: white;
+            
+            
+        }
+        nav a:hover {
+            cursor: pointer;
+            color: $softRed;
+            
+            
         }
     }
