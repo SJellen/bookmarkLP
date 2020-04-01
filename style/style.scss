@@ -73,8 +73,10 @@ header {
 }
 
 .top {
-    height: 750px;
+    height:1250px;
+    overflow: hidden;
     .top-word-box {
+    
         width: 500px;
         margin-left: 11.5%;
         margin-top: 10rem;
@@ -128,6 +130,7 @@ header {
         }
     }
     .img-box {
+        
         margin-top: -21.5rem;
         float: right;
         
@@ -752,7 +755,7 @@ header {
                     height: 650px;
                     display: none;
                     width: 375px;
-                    background-color: hsla(229, 31%, 21%, 0.9);
+                    background-color: hsla(229, 31%, 21%, 0.975);
                     height: 600px;
                     z-index: 9;
                     position: absolute;
@@ -808,6 +811,7 @@ header {
             
 
             .features {
+                margin-top: -10rem;
                 .tab-box {
                     .feature-tab {
                         .tab-image {
@@ -896,4 +900,239 @@ header {
             }
           
         }
+
+        @media only screen and (max-width: 600px) {
+            .top {
+                .img-box {
+                    margin-top: -25rem;
+                   
+                   
+                    img.hero {
+                        float: none;
+                        width: 80%;
+                        
+                        padding: 0;
+                        margin-left: 10%;
+                        
+                    }
+                    .blue-line {
+                        height: 250px;
+                        margin-top: -15rem;
+                    }
+                }
+                .top-word-box {
+                    margin-top: 30rem;
+                    width: 80%;
+                    button.chrome  {
+                        margin-left: 10%;
+                    }
+                }
+            }
+            .features {
+                margin-top: -25rem;
+                .feature-word-box {
+                    width: 80%;
+                }
+                .tab-box {
+                    .tab-nav {
+                        .tab {
+                            width: 40%;
+                        }
+                    }
+                }
+                .feature-tab {
+                    .tab-image {
+                        width: 80%;
+                    }
+                 
+                }
+                .tab-word-box {
+                    width: 80% !important;
+                    h3 {
+                        width: 100%;
+                    }
+                 }
+            }
+            .extension-box {
+              margin-top: -15rem;
+            }
+            .accordian-box {
+                
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                .question-answer-box {
+                    width: 90%;
+                }
+            }
+        }
+
+
+        @media only screen and (max-width: 550px) {
+            .top {
+                .img-box {
+                    img.hero {
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -20rem;
+                        margin-left: 20%;
+                    }
+                    
+                    
+                }
+                .top-word-box {
+                    margin-bottom: -5rem;
+                    display: flex;
+                    flex-direction: column;
+                    button.chrome {
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 2rem;
+                       
+                    }
+                    button.firefox {
+                        margin-left: auto;
+                        margin-right: auto;
+                     
+                    }
+                }
+            }
+            .features {
+                margin-top: -17rem;
+                .feature-tab {
+                    .blue-line {
+                        margin-top: -8rem;
+                        height: 200px;
+                    }
+                }
+            }
+            .extension-box {
+                margin-top: -10rem;
+            }
+        }
+
+
+        @media only screen and (max-width: 450px) {
+            .top {
+                    .img-box {
+                        img.hero {
+                            width: 70%;
+                            float: right;
+                        }
+                    }
+               
+            }
+            .tab-box {
+                .tab-nav {
+                    min-height: 220px;
+                   
+                }
+            }
+            .extension-box {
+                .extension-word-box {
+
+                    width: 90%;
+                }
+               
+            }
+            .accordian-box {
+                .accordian-word-box {
+                    
+                    width: 90%;
+                }
+            }
+            footer {
+                nav {
+                    width: 40%;
+                    text-align: center;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            body {
+                max-width: 375px;
+            }
+            header {
+                .nav {
+                    width: 90%;
+                }
+            }
+            .top {
+                .img-box {
+                   img.hero {
+                       width: 60%;
+
+                   }
+                   .blue-line {
+                       height: 200px;
+                       margin-left: 50%;
+                   }
+                    
+                }
+                .top-word-box {
+                    width: 90%;
+                    
+                }
+            }
+            .features {
+                .tab-box {
+                    
+                    .tab {
+                   
+                       width: 50% !important;
+                       
+                    }
+                    .tab-nav {
+                        
+                        min-height: 200px;
+                    }
+                }
+            }
+            .extension-box {
+                .extension-card-box {
+                   
+                    padding-left: 10%;
+                }
+            }
+            .accordian-box {
+                
+                .question-answer-box {
+                   
+                    width: 100%;
+                }
+            }
+
+        
+          .bottom {
+              padding-bottom: 5rem;
+          }
+        
+          footer {
+              nav {
+                  margin-left: 35%;
+              }
+          }
+        }
+
+        @media only screen and (max-width: 320px) {
+            .top {
+                
+                .img-box {
+                   img.hero {
+                       width: 50%;
+                    
+
+                   }
+                   .blue-line {
+                       height: 200px;
+                       margin-left: 60%;
+                   }
+                    
+        
+            } 
+        }
     
+    }
