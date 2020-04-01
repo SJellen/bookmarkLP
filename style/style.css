@@ -15,6 +15,10 @@ header {
   text-transform: uppercase;
 }
 
+header .header-img {
+  display: none;
+}
+
 header .hamburger {
   float: right;
   margin-right: 2rem;
@@ -65,6 +69,10 @@ header button.login:hover {
   border: 2px solid #fa5757;
   -webkit-transition: 500ms ease-in;
   transition: 500ms ease-in;
+}
+
+header .social {
+  display: none;
 }
 
 .top {
@@ -177,6 +185,13 @@ header button.login:hover {
   margin: 0 auto;
   height: 43px;
   margin-bottom: 3rem;
+}
+
+.features .tab-box .tab-nav .border {
+  width: 100%;
+  border-bottom: 0.5px solid #9194a1;
+  border-top: 0.5px solid #9194a1;
+  display: none;
 }
 
 .features .tab-box .tab-nav h3 {
@@ -709,7 +724,7 @@ footer nav a:hover {
     text-align: center;
   }
   .features {
-    height: 1400px;
+    height: 1500px;
   }
   .features .tab-box .tab-nav {
     width: 90%;
@@ -729,6 +744,75 @@ footer nav a:hover {
     margin: 0 auto;
     padding-top: 23px;
     padding-bottom: 23px;
+  }
+  .features .tab-box .tab-nav .border {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  header {
+    margin-top: -1rem;
+  }
+  header img.hamburger {
+    display: block;
+    margin-right: 3rem;
+    z-index: 99;
+    position: relative;
+  }
+  header .nav {
+    height: 650px;
+    display: none;
+    width: 375px;
+    background-color: rgba(37, 43, 70, 0.9);
+    height: 600px;
+    z-index: 9;
+    position: absolute;
+    right: -1%;
+    top: 5%;
+  }
+  header nav a {
+    color: white;
+    display: block;
+    width: 80%;
+    border-top: 0.25px solid #9194a1;
+    border-bottom: 0.25px solid #9194a1;
+    padding: 25px 0;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  header .open {
+    display: block;
+  }
+  header .header-img {
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  header button.login {
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 1rem;
+    margin-top: 2rem;
+    font-weight: 500;
+  }
+  header .social {
+    display: block;
+    margin-top: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .social img {
+    padding-right: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

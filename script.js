@@ -2,12 +2,11 @@
 // hamburger nav menu/////////////////////////
 
 
-
 const hamburger = document.querySelector(".menu-hamburger");
-const menu = document.querySelector("nav")
+const menu = document.querySelector("nav");
 
 function toggleMenu() {
-    if(menu.classList.contains("open")) {
+    if (menu.classList.contains("open")) {
         menu.classList.remove("open");
         hamburger.querySelector('img').src = "./images/icon-hamburger.svg";
     } else {
@@ -16,7 +15,7 @@ function toggleMenu() {
     }
 }
 
-hamburger.addEventListener('click', toggleMenu)
+hamburger.addEventListener('click', toggleMenu);
 
 
 
@@ -127,3 +126,4 @@ function checkInputs(e) {
 function emailValid (email) {
     return /\S+@\S+\.\S+/.test(email)
 }
+
