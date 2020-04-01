@@ -537,8 +537,8 @@ header .social {
 }
 
 .bottom form .error input {
-  background: url(./images/icon-error.svg) no-repeat scroll 95%;
-  border: 2px solid #fa5757;
+  background: url(../images/icon-error.svg) no-repeat scroll 95%;
+  border: 1px solid #fa5757;
   border-bottom: 20px solid #fa5757;
   background-color: white;
 }
@@ -593,7 +593,7 @@ footer nav a:hover {
   color: #fa5757;
 }
 
-@media only screen and (max-width: 13300px) {
+@media only screen and (max-width: 1300px) {
   .top .top-word-box {
     margin-left: 5%;
   }
@@ -798,6 +798,9 @@ footer nav a:hover {
     margin-top: 2rem;
     font-weight: 500;
   }
+  header button.login:hover {
+    background-color: white;
+  }
   header .social {
     display: block;
     margin-top: 10rem;
@@ -813,6 +816,96 @@ footer nav a:hover {
   }
   header .social img {
     padding-right: 25px;
+    padding-left: 25px;
+  }
+  .features .tab-box .feature-tab .tab-image {
+    margin-left: 10%;
+  }
+  .features .tab-box .feature-tab .blue-line {
+    width: 70%;
+  }
+  .features .tab-box .tab-word-box {
+    text-align: center;
+  }
+  .features .tab-box .tab-word-box button {
+    display: none;
+  }
+  .extension-box {
+    margin-top: -5rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .extension-box .extension-word-box {
+    text-align: center;
+    width: 80%;
+  }
+  .bottom {
+    padding-bottom: 2rem;
+  }
+  .bottom h4 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .bottom h2 {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .bottom form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  .bottom form input {
+    width: 99.5%;
+  }
+  .bottom form .submit {
+    width: 100%;
+    margin-top: .5rem;
+  }
+  footer {
+    height: 345px;
+  }
+  footer img.logo-white {
+    margin-left: 35%;
+    margin-right: auto;
+    float: none;
+  }
+  footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  footer nav a {
+    font-size: 1rem;
+    padding-bottom: 2rem;
+  }
+  footer .social {
+    margin-top: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    float: none;
+    margin-left: -5%;
   }
 }
 /*# sourceMappingURL=style.css.map */

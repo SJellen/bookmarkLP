@@ -477,8 +477,8 @@ header {
             }
             .error {
                 input {
-                    background: url(./images/icon-error.svg) no-repeat scroll 95%;
-                    border: 2px solid $softRed;
+                   background: url(../images/icon-error.svg) no-repeat scroll 95%;
+                    border: 1px solid $softRed;
                     border-bottom: 20px solid $softRed;
                     background-color: white;
                 }
@@ -535,7 +535,7 @@ header {
 
 
 
-    @media only screen and (max-width: 13300px) {
+    @media only screen and (max-width: 1300px) {
         .top {
             .top-word-box {
                 margin-left: 5%;
@@ -790,6 +790,9 @@ header {
                     margin-top: 2rem;
                     font-weight: 500;
                 }
+                button.login:hover {
+                    background-color: white;
+                }
                 .social {
                     display: block;
                     margin-top: 10rem;
@@ -799,7 +802,98 @@ header {
                 }
                 .social img {
                     padding-right: 25px;
+                    padding-left: 25px;
                 }
             }
+            
+
+            .features {
+                .tab-box {
+                    .feature-tab {
+                        .tab-image {
+                            margin-left: 10%;
+                        }
+                        .blue-line {
+                            width: 70%;
+                        }
+
+                    }
+                    .tab-word-box {
+                        text-align: center;
+                        button {
+                            display: none;
+                        }
+                    }
+
+
+
+                }
+            }
+            .extension-box {
+                margin-top: -5rem;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+                .extension-word-box {
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+            .bottom {
+                padding-bottom: 2rem;
+                h4 {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                h2 {
+                    width: 80%;
+                    margin: 2rem auto;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    
+                    input {
+                        width: 99.5%;
+                    }
+                    .submit {
+                        width: 100%;
+                        margin-top: .5rem;
+                    }
+
+                }
+            }
+            footer {
+               height: 345px;
+               img.logo-white {
+                 margin-left: 35%;
+                 margin-right: auto;
+                 float: none;
+               }
+               nav {
+                   display: flex;
+                   flex-direction: column;
+                   margin-top: 3rem;
+                   margin-left: auto;
+                   margin-right: auto;
+                   text-align: center;
+               }
+               nav a {
+                font-size: 1rem;
+                padding-bottom: 2rem;
+               
+               }
+               .social {
+                   margin-top: 2rem;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   float: none;
+                   margin-left: -5%;
+               }
+
+            }
+          
         }
     
